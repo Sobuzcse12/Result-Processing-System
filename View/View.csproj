@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEFAB86D-3249-4924-9290-5CF00D10B387}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBatch.Designer.cs">
+      <DependentUpon>AddBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignCourse.Designer.cs">
+      <DependentUpon>AssignCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDisipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDisipline.Designer.cs">
+      <DependentUpon>CreateDisipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksEntry_StudentWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksEntry_StudentWise.Designer.cs">
+      <DependentUpon>MarksEntry_StudentWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksEntry_SubWise_Sessional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksEntry_SubWise_Sessional.Designer.cs">
+      <DependentUpon>MarksEntry_SubWise_Sessional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksEntry_SubWise_Theory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksEntry_SubWise_Theory.Designer.cs">
+      <DependentUpon>MarksEntry_SubWise_Theory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print_GradeSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_GradeSheet.Designer.cs">
+      <DependentUpon>Print_GradeSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultProcessingDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultProcessingDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResultProcessingDataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultProcessingDataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResultProcessingDataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultProcessingDataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBatch.resx">
+      <DependentUpon>AddBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignCourse.resx">
+      <DependentUpon>AssignCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDisipline.resx">
+      <DependentUpon>CreateDisipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksEntry_StudentWise.resx">
+      <DependentUpon>MarksEntry_StudentWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksEntry_SubWise_Sessional.resx">
+      <DependentUpon>MarksEntry_SubWise_Sessional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksEntry_SubWise_Theory.resx">
+      <DependentUpon>MarksEntry_SubWise_Theory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_GradeSheet.resx">
+      <DependentUpon>Print_GradeSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ResultProcessingDataDataSet.xsc">
+      <DependentUpon>ResultProcessingDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResultProcessingDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResultProcessingDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResultProcessingDataDataSet.xss">
+      <DependentUpon>ResultProcessingDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResultProcessingDataDataSet1.xsc">
+      <DependentUpon>ResultProcessingDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResultProcessingDataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResultProcessingDataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResultProcessingDataDataSet1.xss">
+      <DependentUpon>ResultProcessingDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResultProcessingDataDataSet2.xsc">
+      <DependentUpon>ResultProcessingDataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ResultProcessingDataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResultProcessingDataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResultProcessingDataDataSet2.xss">
+      <DependentUpon>ResultProcessingDataDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{43795bd2-4251-49b5-b19f-5f1d4d1194f0}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{0cb90c1a-dd14-438e-879d-43affc4b9945}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="myData.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ResultProcessingData.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
